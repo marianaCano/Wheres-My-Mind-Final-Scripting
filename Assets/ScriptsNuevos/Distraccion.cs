@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Distraccion : Personajes
+public class Distraccion : MonoBehaviour, Personajes
 {
     public int distractionType;
 

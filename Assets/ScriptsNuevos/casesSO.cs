@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [CreateAssetMenu(fileName = "channel", menuName = "ScriptableObjects/caseSO", order = 1)]
-public class casesSO : MonoBehaviour
+public class casesSO : ScriptableObject
 {
     public Personajes perso_;
 

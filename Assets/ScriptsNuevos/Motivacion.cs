@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Motivacion : Personajes
+public class Motivacion : MonoBehaviour, Personajes
 {
     [SerializeField] private int type = 0;
     public int GetCharacterType()
