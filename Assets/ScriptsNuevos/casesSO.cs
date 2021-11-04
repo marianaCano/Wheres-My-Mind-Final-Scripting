@@ -11,7 +11,7 @@ public class casesSO : ScriptableObject
     public void characterFound(Personajes persoFound)
     {
         OnJulianHit?.Invoke(persoFound.GetCharacterType());
-        Debug.Log(persoFound.GetCharacterType());
+        //Debug.Log(persoFound.GetCharacterType());
     }
 
 }

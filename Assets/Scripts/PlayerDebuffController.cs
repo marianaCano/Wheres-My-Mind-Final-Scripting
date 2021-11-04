@@ -15,6 +15,7 @@ public class PlayerDebuffController : MonoBehaviour
     bool isOn = false;
     Animator animator;
     AudioSource audioSource;
+    [SerializeField] private casesSO channel;
 
     void Start()
     {
@@ -37,7 +38,7 @@ public class PlayerDebuffController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            debuff = other.gameObject.GetComponent<EnemyController>();
+            //debuff = other.gameObject.GetComponent<EnemyController>();
             isOn = true;
             timer = 0;
             audioSource.Play();
@@ -45,6 +46,16 @@ public class PlayerDebuffController : MonoBehaviour
             Instantiate(particles, this.transform.position, this.transform.rotation);
             TimeOut();
         }
+    }
+
+    private void OnEnable()
+    {
+        channel.OnJulianHit += StateMachine;
+    }
+
+    private void OnDisable()
+    {
+        channel.OnJulianHit -= StateMachine;
     }
 
     bool created = false;
@@ -67,6 +78,11 @@ public class PlayerDebuffController : MonoBehaviour
             isOn = false;
             timer = 0;
         }
+    }
+
+    void StateMachine(int type)
+    {
+
     }
 
     void Slow()
