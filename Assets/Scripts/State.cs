@@ -11,6 +11,7 @@ public class State : MonoBehaviour
 
     void Update()
     {
+
         if (walls[0] == false || paredDerecha.activeSelf == false)
         {
             paredDerecha.SetActive(false);

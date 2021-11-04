@@ -43,7 +43,6 @@ public class PlayerStateController : MonoBehaviour
                 break;
         }
     }
-
     void Slow()
     {
         move.speed = lostSpeed;
