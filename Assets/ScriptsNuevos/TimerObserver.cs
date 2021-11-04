@@ -14,7 +14,7 @@ public class TimerObserver : MonoBehaviour
     }
     private void DecreaseTimer(int value)
     {
-        if (value == 2)
+        if (value == 4 )
         {
             timer_.pretime = lostTime;
         }
