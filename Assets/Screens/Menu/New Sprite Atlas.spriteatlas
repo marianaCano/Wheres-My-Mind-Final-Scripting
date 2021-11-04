@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 3bff55f7310e163408f70214c0baa1e9, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3a1129214856e734db05c595d0410603, type: 3}
+  - {fileID: 21300000, guid: 8551bce1390e4bc428d7633eb3674a15, type: 3}
+  - {fileID: 21300000, guid: 924fc95278a50af4b9ea01642f528cd7, type: 3}
+  - {fileID: 21300000, guid: 0f270362fbeee244695960ef97d00f31, type: 3}
+  - {fileID: 21300000, guid: 7795b3b2f6cefcd4cae39626e27c9110, type: 3}
+  - {fileID: 21300000, guid: a6753a8afbafe54418f212c5c33528a4, type: 3}
+  - {fileID: 21300000, guid: f9d512aaf465cb64289a7df0857e2bab, type: 3}
+  - {fileID: 21300000, guid: fd7e9efafcbf5ad49b2c5d3af5896b64, type: 3}
+  - {fileID: 21300000, guid: db28e7ab6cfeaf341b34b4f4ec681fd5, type: 3}
+  - {fileID: 21300000, guid: 79da7f3f10df02e42a565102b8b3bfe2, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - PlayRelax
+  - PlayInteraction
+  - PlayInteraction 1
+  - MenuIlustracionTerminada
+  - TutorialRelax
+  - ExitInteraction
+  - CreditsRelax
+  - ExitRelax
+  - TutorialInteraction
+  - CreditsInteraction
+  m_Tag: New Sprite Atlas
+  m_IsVariant: 0
