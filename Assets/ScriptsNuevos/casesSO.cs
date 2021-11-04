@@ -6,13 +6,12 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "channel", menuName = "ScriptableObjects/caseSO", order = 1)]
 public class casesSO : ScriptableObject
 {
-    public Personajes perso_;
-
     public event UnityAction<int> OnJulianHit;
 
     public void characterFound(Personajes persoFound)
     {
         OnJulianHit?.Invoke(persoFound.GetCharacterType());
+        Debug.Log(persoFound.GetCharacterType());
     }
 
 }

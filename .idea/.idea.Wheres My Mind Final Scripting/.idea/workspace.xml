@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c6eff31-83aa-4bcc-855e-e130640be639" name="Changes" comment="" />
+    <list default="true" id="0c6eff31-83aa-4bcc-855e-e130640be639" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Wheres My Mind Final Scripting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Wheres My Mind Final Scripting/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsNuevos/casesSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsNuevos/casesSO.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +12,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptsNuevos/VictoriaObserver.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="20RaCBJMTKRPFNGb5i9GTuD4Wh3" />
   <component name="ProjectViewState">
@@ -30,6 +36,8 @@
       <option name="presentableId" value="Default" />
       <updated>1636009729351</updated>
       <workItem from="1636009735868" duration="977000" />
+      <workItem from="1636011115099" duration="19000" />
+      <workItem from="1636011248637" duration="798000" />
     </task>
     <servers />
   </component>
@@ -46,6 +54,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
