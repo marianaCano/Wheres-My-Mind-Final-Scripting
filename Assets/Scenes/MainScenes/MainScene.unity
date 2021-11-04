@@ -14024,6 +14024,7 @@ MonoBehaviour:
   - {fileID: 7570957327621975219, guid: c8d1e585e478479409042bda5bda9db0, type: 3}
   - {fileID: 2229457374090732421, guid: 695d491e50a057b4bbada73df0b6d53a, type: 3}
   - {fileID: 6068106557398185068, guid: 6f4aa16e2f2c8e4498884e86e4285f04, type: 3}
+  channel: {fileID: 11400000, guid: 5f0b6791c6852954c86302c3171c7db3, type: 2}
 --- !u!114 &1290623472599677147
 MonoBehaviour:
   m_ObjectHideFlags: 0

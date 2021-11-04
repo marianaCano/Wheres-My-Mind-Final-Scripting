@@ -27,18 +27,13 @@ public class PlayerDebuffController : MonoBehaviour
 
     void Update()
     {
-        TurningOn();
-        Slow();
-        Root();
-        Drunk();
-        Blind();
+        TurningOff();
     }
     
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            //debuff = other.gameObject.GetComponent<EnemyController>();
             isOn = true;
             timer = 0;
             audioSource.Play();
@@ -67,7 +62,7 @@ public class PlayerDebuffController : MonoBehaviour
         }
     }
 
-    void TurningOn()
+    void TurningOff()
     {
         if (isOn == true && timer <= endTime)
         {
@@ -75,85 +70,68 @@ public class PlayerDebuffController : MonoBehaviour
         }
         else if (timer >= endTime)
         {
+            move.speed = temp;
+            animator.SetBool("isDancing", false);
             isOn = false;
+            created = false;
+            lantern.SetActive(true);
             timer = 0;
         }
     }
 
     void StateMachine(int type)
     {
+        switch (type)
+        {
+            case 1:
+                Slow();
+                break;
+            case 2:
+                TimeOut();
+                break;
+            case 3:
+                Root();
+                break;
+            case 4:
+                Drunk();
+                break;
+            case 5:
+                Blind();
+                break;
 
+            default:
+                break;
+        }
     }
 
     void Slow()
     {
-        if (isOn == true && debuff.debuffType == 1)
-        {
-            move.speed = lostSpeed;
-            Sprite(0);     
-        }
-        else if (isOn == false)
-        {
-            move.speed = temp;
-            created = false;
-        }
+        move.speed = lostSpeed;
+        Sprite(0);
     }
 
     void TimeOut()
     {
-        if (isOn == true && debuff.debuffType == 2)
-        {
-            canvasTimer.GetComponent<Timer>().pretime -= lostTime;
-            Sprite(1);
-        }
-        else
-            created = false;
+        canvasTimer.GetComponent<Timer>().pretime -= lostTime;
+        Sprite(1);
     }
 
     void Root()
     {
-        if (isOn == true && debuff.debuffType == 3)
-        {
-            move.speed = 0;
-            animator.SetBool("isDancing", true);
-            Sprite(2);
-
-        }
-        else if (isOn == false)
-        {
-            move.speed = temp;
-            animator.SetBool("isDancing", false);
-            created = false;
-        }
+        move.speed = 0;
+        animator.SetBool("isDancing", true);
+        Sprite(2);
     }
 
     void Drunk()
     {
-        if (isOn == true && debuff.debuffType == 4)
-        {
-            move.speed = -temp;
-            Sprite(3);
-
-        }
-        else if (isOn == false)
-        {
-            move.speed = temp;
-            created = false;
-        }
+        move.speed = -temp;
+        Sprite(3);
     }
 
     void Blind()
     {
-        if (isOn == true && debuff.debuffType == 5)
-        {
-            lantern.SetActive(false);
-            Sprite(4);
-
-        }
-        else if (isOn == false)
-        {
-            lantern.SetActive(true);
-            created = false;
-        }
+        lantern.SetActive(false);
+        Sprite(4);
     }
 }
